@@ -1,0 +1,102 @@
+$VeryDarkGray: hsl(0, 0%, 17%);
+$DarkGray: hsl(0, 0%, 59%);
+
+.mainContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 18vh;
+	border-radius: 15px;
+	background-color: white;
+	padding-right: 4rem;
+
+	.ipInfoItem{
+		display: flex;
+		align-items: flex-start;
+		position: relative;
+		width: 25%;
+		height: 50%;
+		border-left: 1px solid $DarkGray;
+		padding: 2rem 0rem 0rem 4rem;
+		font-family: 'Rubik', sans-serif;
+		font-weight: 700;
+
+		.ipInfoTitle {
+			position: absolute;
+			top: -10%;
+			color: $DarkGray;
+			font-size: 1.8rem;
+		}
+
+		.ipInfoData {
+			color: $VeryDarkGray;
+			font-size: 2.5rem;
+		}
+
+		.ipInfoLocationData {
+
+		}
+
+		.loading {
+			width: 80%;
+			height: 50%;
+		}
+
+	}
+
+	.ipInfoFirstItemContainer {
+		border-left: 0px;
+	}
+}
+
+@media (max-width: 1250px) {
+	.mainContainer {
+		padding-right: 3rem;
+	
+		.ipInfoItem{
+			padding: 2rem 1.5rem 0rem 1.5rem;
+	
+			.ipInfoTitle {
+				font-size: 1.6rem;
+			}
+	
+			.ipInfoData {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	.mainContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 40.2vh;
+		padding: 3rem 3rem 0rem 3rem;
+		overflow: hidden;
+		text-align: center;
+	
+		.ipInfoItem{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			height: 25%;
+			border-left: 0px;
+			padding: 0rem;
+			font-weight: 700;
+	
+			.ipInfoTitle {
+				position: relative;
+				font-size: 1.2rem;
+				margin-bottom: 0.3rem;
+			}
+	
+			.ipInfoData {
+				font-size: 1.9rem;
+			}
+		}
+	}
+}

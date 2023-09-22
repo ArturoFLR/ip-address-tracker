@@ -1,0 +1,157 @@
+@keyframes animateText{
+	0% {
+		opacity: 1;
+		top: 2.4vh;
+	}
+	100% {
+		opacity: 0;
+		top: -3vh;
+	}
+}
+
+.mainContainer {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 7vh;
+	border: 0px;
+	border-radius: 15px;
+	overflow: hidden;
+
+	input {
+		width: 90%;
+		height: 7vh;
+		font-size: 2.2rem;
+		font-family: 'Rubik', sans-serif;
+		cursor: pointer;
+		outline: 0px;
+		padding: 0rem 2rem 0rem 2rem;
+	}
+
+	button {
+		width: 10%;
+		height: 100%;
+		background-color: black;
+		border: 0px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgb(61, 60, 60);
+		}
+
+		img {
+			width: 26.8%;
+		}
+	}
+
+	.errorMessage {
+		display: none;
+		position: absolute;
+		color: tomato;
+		bottom: 0%;
+		left: 30%;
+	}
+
+	.showErrorMessage {
+		display: block;
+	}
+
+	.searchTextCopy {
+		opacity: 0;
+		position: absolute;
+		top: 2.4vh;
+		left: 2.1rem;
+		font-size: 2.2rem;
+		font-family: 'Rubik', sans-serif;
+	}
+
+	.searchTextCopyAnimated {
+		animation: animateText 1s;
+	}
+}
+
+@media (max-width: 1250px) {
+	.mainContainer {
+	
+		input {
+			width: 85%;
+			height: 7vh;
+			font-size: 2.2rem;
+			font-family: 'Rubik', sans-serif;
+			cursor: pointer;
+			outline: 0px;
+			padding: 0rem 2rem 0rem 2rem;
+		}
+	
+		button {
+			width: 15%;
+			height: 100%;
+			background-color: black;
+			border: 0px;
+			cursor: pointer;
+	
+			&:hover {
+				background-color: rgb(61, 60, 60);
+			}
+	
+			img {
+				width: 26.8%;
+			}
+		}
+	
+		.errorMessage {
+			display: none;
+			position: absolute;
+			color: tomato;
+			bottom: 0%;
+			left: 30%;
+		}
+	
+		.showErrorMessage {
+			display: block;
+		}
+	
+		.searchTextCopy {
+			display: none;
+			position: absolute;
+			top: 2.4vh;
+			left: 2.1rem;
+			font-size: 2.2rem;
+			font-family: 'Rubik', sans-serif;
+		}
+	
+		.searchTextCopyAnimated {
+			animation: animateText 1s;
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	.mainContainer {
+		height: 10vh;
+		border-radius: 13px;
+	
+		input {
+			width: 82%;
+			height: 10vh;
+			font-size: 1.8rem;
+			letter-spacing: 0.8px;
+			padding: 0rem 1rem 0rem 2rem;
+		}
+	
+		button {
+			width: 18%;
+		}
+	
+		.errorMessage {
+			bottom: 0%;
+			left: 15%;
+			font-size: 1.5rem;
+			font-weight: 700;
+		}
+
+		.searchTextCopy {
+			font-size: 1.8rem;
+		}
+	}
+}
