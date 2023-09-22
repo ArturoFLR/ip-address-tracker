@@ -36,7 +36,7 @@ const Map = ( { lat, lng, ip }: MapProps ) => {
 				/>
 				<Marker position={{ lat: latToShow, lng: lngToShow }} icon={icon(
 					{
-						iconUrl: "../../public/icon/icon-location.svg",
+						iconUrl: "icon/icon-location.svg",
 						iconSize: [58, 68],
 					}
 				)} 
