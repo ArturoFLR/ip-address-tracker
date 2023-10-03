@@ -21,7 +21,7 @@ const SearchBar = ( {handleNewSearch}: SearchBarProps) => {
 		if (ipParamValidated) {
 			animateSearchText(inputELement.value);
 			inputELement.value = "";
-			handleNewSearch(searchParam, "apiKey");
+			handleNewSearch(searchParam, "ipAddress");
 			setError(false);
 		}else if (domainParamValidated) {
 			animateSearchText(inputELement.value);
